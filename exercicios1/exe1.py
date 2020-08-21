@@ -1,4 +1,4 @@
-''' Faça um programa que receba a idade
+''' Faça um programa que receba a idade e o nome
 do usuario e diga se ele eh maior ou menor de idade'''
 
 nome = input ('Digite seu nome: ')
