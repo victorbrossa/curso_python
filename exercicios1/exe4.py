@@ -12,4 +12,4 @@ for i in range(len(lista)):
         aux = lista[i]
         lista[i] = lista[menor]
         lista[menor] = aux
-print (lista) 
+print (lista)
