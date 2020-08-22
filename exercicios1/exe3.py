@@ -1,18 +1,27 @@
 '''Escreva um programa que resolva uma equação de segundo grau.'''
+
 from math import sqrt
 
 a = int (input('Digite o valor de a: '))
 b = int (input('Digite o valor de b: '))
 c = int (input('Digite o valor de c: '))
 
-print(type(b))
 
-delta = float( b**2 - 4*a*c)
-print(delta)
-raiz_delta = sqrt(delta) 
+d = float( b**2 - 4*a*c)
+print('delta: ', d)
 
-x1 = (-b + raiz_delta)/(2*a)
-x2 = (-b - raiz_delta)/(2*a)
+if d > 0:
+    delta = sqrt(d)
+    print('Raiz quadrada de delta: ', delta)
+    x1 = (-b + delta) / (2 * a)
+    x2 = (-b - delta) / (2 * a)
+    print('x1 = ', x1, 'x2 = ', x2)
 
-print ("x1 = %f" %x1)
-print ("x2 = %f" %x2)
+elif d == 0:
+    delta = sqrt(d)
+    print('Raiz quadrada de delta: ', delta)
+    x = -b / (2 * a)
+    print ('valor de x = ', x)
+
+elif d < 0:
+    print('Essa raiz eh menor do que zero')
